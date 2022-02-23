@@ -13,7 +13,7 @@ export class EmpleadoService {
     return this.empleados;
   }
   eli(num:number){
-    delete this.empleados[num];
+    this.empleados.splice(num,1);
   }
   addUser(empl:Empleado){
     this.empleados.push(empl);
